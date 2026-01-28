@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="dem"></p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <input id="k" type="text" placeholder="Press a key here!">
+
+<p id="demo5"></p>
+
+    <script>
+        const new_set = new Set(["a", "b"]);
+
+        // creating a set
+        document.getElementById("dem").innerHTML = [...new_set].join(", ");
+
+        // // checking size
+        // document.getElementById("demo").innerHTML = new_set.size;
+
+        // // adding values to set
+        // new_set.add("c");
+        // document.getElementById("demo2").innerHTML = [...new_set].join(", ");
+
+        // // listing all values in the set
+        // let text = "";
+        // for (const x of new_set) {
+        //     text += x + "<br>";
+        // }
+
+        // document.getElementById("demo3").innerHTML = text;
+
+        const k = document.getElementById("k");
+k.addEventListener("keydown", function (event) {
+
+  document.getElementById("demo5").innerHTML = "You pressed: " + event.key;
+});
+console.log(k)
+    </script>
+
+</body>
+</html>
