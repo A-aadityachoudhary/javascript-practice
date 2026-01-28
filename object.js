@@ -31,6 +31,4 @@ function Parent(firstname, lastname, age){
 // father.nationality= "india";
 // console.log(father.nationality)
 
-//we can destruct parameter from this function
-let {firstname,lastname}=Parent;
-console.log(firstname)
+
